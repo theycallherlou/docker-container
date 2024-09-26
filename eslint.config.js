@@ -31,13 +31,11 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true }
-      ],
       '@typescript-eslint/no-unsafe-assignment': 0,
       '@typescript-eslint/no-unsafe-call': 0,
-      '@typescript-eslint/no-unsafe-member-access': 0
+      '@typescript-eslint/no-unsafe-member-access': 0,
+      '@typescript-eslint/restrict-template-expressions': 0,
+      '@typescript-eslint/no-unsafe-return': 0
     }
   }
 );
